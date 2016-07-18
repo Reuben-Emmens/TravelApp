@@ -4,5 +4,6 @@
 		<h2> <%= d.name %> </h2>
 		<p><%= d.description %></p>
 		<%= link_to "See more", destination_path(d) %>
+		<%= link_to "Edit this destination", edit_destination_path(d) %>
 	</div>
 <% end %>
