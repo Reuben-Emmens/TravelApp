@@ -1,9 +1,27 @@
-<% @destinations.each do |d| %>
-	<div>
-		<%= image_tag d.image %>
-		<h2> <%= d.name %> </h2>
-		<p><%= d.description %></p>
-		<%= link_to "See more", destination_path(d) %>
-		<%= link_to "Edit this destination", edit_destination_path(d) %>
+<div class="header">
+	<div class="container">
+		<img src="/assets/ruby.png" width="80">
+		<h1>TravelApp</h1>
 	</div>
-<% end %>
+</div>
+<div class="tag">
+	<div class="container">
+		<h2 class="tag-title"> <%= @tag.title %> </h2>
+
+		<div class="cards row">
+
+			<% @destinations.each do |d| %>
+			<div>
+				<div class="card col-xs-4">
+					<%= image_tag d.image %>
+					<h2> <%= d.name %> </h2>
+					<p><%= d.description %></p>
+					<%= link_to "See more", destination_path(d) %>
+					<%= link_to "Edit this destination", edit_destination_path(d) %>
+				</div>
+			</div>
+			<% end %>
+			<%= link_to "Back", :root %>
+		</div>
+	</div>
+</div>

@@ -1,5 +1,24 @@
-<div>
-	<%= image_tag @destination.image %>
-	<h2><%= @destination.name %></h2>
-	<p><%= @destination.description %></p>
+<div class="header">
+	<div class="container">
+		<img src="/assets/ruby.png" width="80">
+		<h1>TravelApp</h1>
+	</div>
+</div>
+
+<div class="destination">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+
+
+				<div>
+					<%= image_tag @destination.image %>
+					<h2><%= @destination.name %></h2>
+					<p><%= @destination.description %></p>
+					<%= link_to "Back", @tag %>
+				</div>
+
+			</div>
+		</div>
+	</div>
 </div>

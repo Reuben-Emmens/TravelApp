@@ -2,10 +2,12 @@ class DestinationsController < ApplicationController
 
 	def show 
 		@destination = Destination.find(params[:id])
+		@tag = @destination.tag
 	end
 
 	def edit
 		@destination = Destination.find(params[:id])
+		@tag = @destination.tag
 	end
 
 	def update

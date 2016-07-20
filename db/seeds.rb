@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-t1 = Tag.create(title: "Romance", image: "romance.jpg") #/images/romance.jpg
+t1 = Tag.create(title: "Romance", image: "romance.jpg") 
 Destination.create(name: "Paris", description: "City of love.", image: "paris.jpg", tag_id: t1.id)
 
 t2 = Tag.create(title: "History", image: "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/history01.jpg")
