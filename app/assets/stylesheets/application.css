@@ -49,20 +49,6 @@ h2 a {
   color: #00217f;
 }
 
-.container a {
- background-color: #00217f ;
- color: #fff;
- font-size: 14px;
- font-weight: 300;
- text-align: center;
- text-decoration: none;
- transition: background-color .5s;
- padding: 6px 30px;
- display: inline-block;
- cursor: pointer;
- margin: 8px 0 20px;
-}
-
 .card {
   color: #fff;
   display: block;
